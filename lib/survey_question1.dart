@@ -44,3 +44,26 @@ class _SurveyQuestionsState extends State<SurveyQuestions> {
     );
   }
 }
+  surveycall() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          "1.Enter your name ",
+        ),
+        const SizedBox(),
+        const SizedBox(),
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: TextField(
+            controller: namecontroller,
+            decoration: const InputDecoration(border: OutlineInputBorder()),
+            maxLines: 1,
+            showCursor: true,
+          ),
+        ),
+      ],
+    );
+  }
+}
